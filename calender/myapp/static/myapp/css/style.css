@@ -1,0 +1,13 @@
+.calender_entry{
+	background: #eee;
+	margin-top:50px;
+}
+
+body, html{
+	width:100%;
+	display: grid;
+}
+
+.page-center{
+	margin:auto;
+}

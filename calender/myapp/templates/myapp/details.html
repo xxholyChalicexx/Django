@@ -1,0 +1,20 @@
+
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<div class="calender_entry container">
+	<div class="row">
+		<div class="col-lg-4">
+			<u><h1> {{ entry.name }} </h1></u>
+			<h3>{{ entry.date|date:"Y M d" }}</h3>
+			<p>
+				{{ entry.description }}
+			</p>
+		</div>
+		<div class="col-lg-8">
+			<a href="{% url 'index' %}" class="btn btn-warning">Go Back</a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,8 @@
+<div class="calender_entry col-lg-4">
+			<h2>{{ entry.name }}</h2>
+			<h4>{{ entry.date }}</h4>
+			<p>{{ entry.description|truncatechars:100 }}</p>
+			<a href = "{% url 'details' pk=entry.id %}" class="btn btn-primary">View Details</a>
+			<button data-id="{{ entry.id }}" onclick="deleteCalenderEntry(this)" class="btn btn-danger">Delete</button>		
+
+		</div>
