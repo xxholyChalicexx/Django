@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Articles</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<div class="article-detail">
+		<div class="article">
+			<h2>{{ article.title }}</h2>
+			<p>{{ article.body }}</p>
+			<sub>{{ article.date }}</sub>
+		</div>
+	</div>
+</body>
+</html>
